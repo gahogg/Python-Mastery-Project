@@ -1,0 +1,40 @@
+<head>
+    <title>Loops in Python</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Loops in Python</h1>
+        <p>Loops in Python allow you to repeatedly execute a block of code. Python supports two types of loops:</p>
+        <ul>
+            <li><strong>For Loop:</strong> Used to iterate over a sequence (e.g., lists, strings).</li>
+            <li><strong>While Loop:</strong> Used to repeatedly execute a block of code as long as a condition is true.
+            </li>
+        </ul>
+
+        <h2>Examples:</h2>
+        <h3>For Loop:</h3>
+        <pre>
+        <code class="language-python">
+fruits = ['apple', 'banana', 'cherry']
+for fruit in fruits:
+    print(fruit)  # Output: apple, banana, cherry
+        </code>
+        </pre>
+
+        <h3>While Loop:</h3>
+        <pre>
+        <code class="language-python">
+count = 0
+while count < 5:
+    print(count)  # Output: 0, 1, 2, 3, 4
+    count += 1
+        </code>
+        </pre>
+        <br><br>
+        <a href="/">Go Back Home</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+</body>

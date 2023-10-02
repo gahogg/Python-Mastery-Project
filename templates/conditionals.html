@@ -1,0 +1,65 @@
+<head>
+    <title>Conditionals in Python</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Conditionals in Python</h1>
+        <p>Conditional statements in Python allow you to control the flow of your program based on certain conditions.
+            Python supports the following conditional statements:</p>
+        <ul>
+            <li><strong>if:</strong> Used to execute a block of code if a condition is true.</li>
+            <li><strong>else:</strong> Used to execute a block of code if the same condition is false.</li>
+            <li><strong>elif:</strong> Short for "else if," used to test multiple conditions.</li>
+        </ul>
+
+        <h2>Examples:</h2>
+        <h3>if Statement:</h3>
+        <pre>
+        <code class="language-python">
+age = 18
+
+if age >= 18:
+    print("You are an adult")  # Output: You are an adult
+else:
+    print("You are not an adult")
+        </code>
+        </pre>
+
+        <h3>elif Statement:</h3>
+        <pre>
+        <code class="language-python">
+score = 85
+
+if score >= 90:
+    print("A")
+elif score >= 80:
+    print("B")  # Output: B
+elif score >= 70:
+    print("C")
+else:
+    print("F")
+        </code>
+        </pre>
+
+        <h3>Nested if Statements:</h3>
+        <pre>
+        <code class="language-python">
+x = 10
+
+if x > 0:
+    if x % 2 == 0:
+        print("Positive and even")  # Output: Positive and even
+    else:
+        print("Positive and odd")
+else:
+    print("Non-positive")
+        </code>
+        </pre>
+        <br><br>
+        <a href="/">Go Back Home</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+</body>

@@ -1,0 +1,52 @@
+<head>
+    <title>Advanced Topics in Python</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Advanced Topics in Python</h1>
+        <p>Python offers several advanced topics that enhance your programming capabilities. Here are a few cool ones:
+        </p>
+
+        <h2>Exception Handling:</h2>
+        <pre>
+        <code class="language-python">
+try:
+    result = 10 / 0
+except ZeroDivisionError as e:
+    print("Error:", e)  # Output: Error: division by zero
+        </code>
+        </pre>
+
+        <h2>File I/O:</h2>
+        <pre>
+        <code class="language-python">
+# Writing to a file
+with open("example.txt", "w") as file:
+    file.write("Hello, File!")
+
+# Reading from a file
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)  # Output: Hello, File!
+        </code>
+        </pre>
+
+        <h2>Importing Modules:</h2>
+        <pre>
+        <code class="language-python">
+# Importing the math module
+import math
+
+# Using functions from the math module
+result = math.sqrt(16)
+print(result)  # Output: 4.0
+        </code>
+        </pre>
+        <br><br>
+        <a href="/">Go Back Home</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+</body>

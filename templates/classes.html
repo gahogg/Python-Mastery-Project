@@ -1,0 +1,39 @@
+<head>
+    <title>Classes in Python</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Classes in Python</h1>
+        <p>Classes are a fundamental concept in object-oriented programming in Python. They allow you to define a
+            blueprint for creating objects with specific attributes and behaviors. Here's how you define and use
+            classes:</p>
+
+        <h2>Example:</h2>
+        <h3>Class Definition:</h3>
+        <pre>
+        <code class="language-python">
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def greet(self):
+        print(f"Hello, my name is {self.name} and I am {self.age} years old")
+
+# Create an instance of the Person class
+person1 = Person("Alice", 30)
+person2 = Person("Bob", 25)
+
+# Call the greet method on each instance
+person1.greet()  # Output: Hello, my name is Alice and I am 30 years old
+person2.greet()  # Output: Hello, my name is Bob and I am 25 years old
+        </code>
+        </pre>
+        <br><br>
+        <a href="/">Go Back Home</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+</body>

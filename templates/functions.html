@@ -1,0 +1,57 @@
+<head>
+    <title>Functions in Python</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Functions in Python</h1>
+        <p>Functions in Python allow you to encapsulate a block of code and reuse it throughout your program. Here's how
+            you define and use functions:</p>
+
+        <h2>Example:</h2>
+        <h3>Function Definition:</h3>
+        <pre>
+        <code class="language-python">
+def greet(name):
+    """This function greets the person passed in as a parameter"""
+    print("Hello, " + name + "!")
+
+# Function Call
+greet("Alice")  # Output: Hello, Alice!
+        </code>
+        </pre>
+
+        <h3>Returning Values:</h3>
+        <pre>
+        <code class="language-python">
+def add(a, b):
+    """This function adds two numbers and returns the result"""
+    return a + b
+
+# Function Call
+result = add(5, 3)
+print(result)  # Output: 8
+        </code>
+        </pre>
+
+        <h3>Default Parameter Values:</h3>
+        <p>Python allows you to specify default values for function parameters. These defaults are used when the
+            function is called without providing a value for that parameter. For example:</p>
+        <pre>
+        <code class="language-python">
+def greet_with_default(name='Guest'):
+    """This function greets the person passed in as a parameter or 'Guest' if no name is provided"""
+    print("Hello, " + name + "!")
+
+# Function Calls
+greet_with_default("Alice")  # Output: Hello, Alice!
+greet_with_default()          # Output: Hello, Guest! (default value used)
+        </code>
+        </pre>
+        <br><br>
+        <a href="/">Go Back Home</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+</body>
